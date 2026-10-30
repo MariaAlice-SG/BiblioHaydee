@@ -22,6 +22,11 @@ public class Livro {
         this.genero = genero;
         this.disponivel = true;
     }
+
+    public Livro(String titulo, String isbn, Autor autor, int anoPublicacao) {
+        this(titulo, isbn, autor, anoPublicacao, "Não informado");
+    }
+
     @Override
     public String toString() {
         return "Livro{" +
